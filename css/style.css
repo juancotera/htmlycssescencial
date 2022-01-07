@@ -70,3 +70,25 @@ h2{
 h3{
   font-size: 1.5em;
 }
+
+pre{
+  background: #FEC62E;
+;
+}
+
+.hero{
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../img/patron-1.png');
+  height: 350px;
+}
+
+h3::before{
+  content: '-';
+}
+
+h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: #FEC62E;
+  display: inline-block;
+}
