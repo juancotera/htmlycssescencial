@@ -31,6 +31,7 @@
   --gray30: #212121;
   --gray20: #212429;
   --gray10: #616161;
+  /* direction: rtl; */
 }
 
 body {
@@ -81,11 +82,19 @@ pre{
   height: 350px;
 }
 
-h3::before{
-  content: '-';
+.section-content{
+  counter-reset: titleList;
 }
 
-h3::after{
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::before{
+  content: counter(titleList)'. ';
+}
+
+.section-content h3::after{
   content: '';
   width: 32px;
   height: 4px;
