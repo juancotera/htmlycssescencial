@@ -90,6 +90,9 @@ hr{
 
 pre{
   background: var(--white10);
+  padding: 40px;
+  overflow: auto; /*si algo desborda de la caja, se crea un escroll horizontal interno*/
+  border-radius: 8px;
 }
 
 p{
@@ -98,10 +101,17 @@ p{
 }
 
 blockquote{
+  font-size: 24px;
+  line-height: 32px;
   margin-block-start: 80px;
   margin-block-end: 63;
   background: var(--white10);
   border-radius: 8px;
+  padding: 24px;
+}
+
+blockquote p{
+  color: var(--white30);
 }
 
 .hero{
@@ -125,7 +135,7 @@ blockquote{
 }
 
 .main-content{
-
+  padding-inline: 16px;
 }
 
 .section-content img{
@@ -146,10 +156,10 @@ blockquote{
   content: counter(titleList)'. ';
 }
 
-.section-content h3::after{
+/* .section-content h3::after{
   content: '';
   width: 32px;
   height: 4px;
   background: #FEC62E;
   display: inline-block;
-}
+} */
