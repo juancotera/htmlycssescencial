@@ -61,9 +61,24 @@ nav details summary{
   font-weight: bold;
 }
 
+main{
+  /* border: 1px solid red; */
+}
+
+.wrapper{
+  width: 902px;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+.main-content{
+  padding: 0px 20px;
+}
+
 h1 {
   font-size: 60px;
-  margin: 64px 10px 16px;
+  font-weight: normal;
+  margin: 64px 0px 16px;
 }
 
 h1 ~ p{
@@ -89,13 +104,21 @@ h3{
 
 pre{
   background: #FEC62E;
-;
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
 }
 
 blockquote{
+  font-size: 24px;
   margin: 32px 0;
   border-left: solid 4px var(--gray30);
+  line-height: 24px;
   padding-left: 16px;
+}
+
+blockquote span{
+  color: var(--gray10);
 }
 
 .hero{
@@ -133,6 +156,8 @@ blockquote{
 
 .section-content h3{
   counter-increment: titleList;
+  /* background: violet; */
+  padding-bottom: 4px;
 }
 
 .section-content h3::before{
@@ -143,6 +168,6 @@ blockquote{
   content: '';
   width: 32px;
   height: 4px;
-  background: #FEC62E;
+  background: var(--gray30);
   display: inline-block;
 }
