@@ -114,9 +114,24 @@ blockquote{
   display: none;
 }
 
+.main{
+
+}
+
+.wrapper{
+  max-inline-size: 902px; /*apicar ancho*/
+  margin: auto; /*centrar el ancho*/
+
+}
+
+.main-content{
+
+}
+
 .section-content img{
   margin-block-start: 40px;
   display: block; /*para manegar el margin collapse, sin esto se sumrían sus margenes -margin-*/
+  max-inline-size: 100%; /*para que las imagenes tomen el ancho del view port en valores lógicos*/
 }
 
 .section-content{
