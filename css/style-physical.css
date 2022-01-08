@@ -34,6 +34,10 @@
   /* direction: rtl; */
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray30);
   font-family: 'Roboto', sans-serif;
@@ -44,7 +48,16 @@ body {
 header{
   /* --gray10: red; */
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  /* background: red; */
+  position: absolute;
+  top: 64px;
+  left: -232px;
+}
+
+header li{
+  margin-bottom: 16px;
 }
 
 header a{
@@ -59,9 +72,21 @@ header a:hover{
 nav details summary{
   color: var(--gray10);
   font-weight: bold;
+  line-height: 24px;
 }
 
-main{
+.header{
+  position: sticky;
+  top: 0;
+}
+
+.header-content{
+  position: relative;
+  /* border: 1px solid red; */
+
+}
+
+.main{
   /* border: 1px solid red; */
 }
 
@@ -72,7 +97,7 @@ main{
 }
 
 .main-content{
-  padding: 0px 20px;
+  padding: 0px 0px;
 }
 
 h1 {
