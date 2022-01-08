@@ -44,7 +44,19 @@ body {
 header{
   /* --white10: red; */
   font-size: 14px;
-  color: #616161;
+  position: absolute;
+  inset-inline-start: -208px;
+  inline-size: 188px;
+}
+
+.header{
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content{
+  position: relative;
+  inset-block-start: 65px;
 }
 
 header a{
@@ -58,6 +70,8 @@ header a:hover{
 
 header li{
   color: var(--white20);
+  margin-inline-end: 16px;
+  margin-block-end: 16px;
 }
 
 nav details summary{
@@ -124,9 +138,7 @@ blockquote p{
   display: none;
 }
 
-.main{
 
-}
 
 .wrapper{
   max-inline-size: 902px; /*apicar ancho*/
