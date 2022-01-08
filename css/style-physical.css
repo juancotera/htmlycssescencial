@@ -44,7 +44,7 @@ body {
 header{
   /* --gray10: red; */
   font-size: 14px;
-  color: #616161;
+  color: var(--gray10);
 }
 
 header a{
@@ -100,6 +100,9 @@ h3{
   font-size: 1.5em;
   margin: 16px 0px 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre{
@@ -157,7 +160,7 @@ blockquote span{
 .section-content h3{
   counter-increment: titleList;
   /* background: violet; */
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before{
@@ -166,8 +169,12 @@ blockquote span{
 
 .section-content h3::after{
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
