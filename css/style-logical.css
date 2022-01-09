@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 @font-face{
   font-family: charter;
   src: url('../fonts/fonts/charter-regular.otf');
@@ -42,21 +46,24 @@ body {
 }
 
 header{
+  /*TODO LO QUE FALTA COMPARANDO CON EL @MEDIA EN ESTE CASO LAS POSICIONES SON PARA EL EFECTO DE RESPONSIVE/
   /* --white10: red; */
+  margin-block-start: 20PX;
   font-size: 14px;
-  position: absolute;
-  inset-inline-start: -208px;
-  inline-size: 188px;
+  /* position: absolute; */
+  /* inset-inline-start: -208px; */
+  /* inline-size: 188px; */
 }
 
 .header{
-  position: sticky;
-  inset-block-start: -45px;
+  /* position: sticky; */
+  /* inset-block-start: -45px; */
 }
 
 .header-content{
-  position: relative;
-  inset-block-start: 65px;
+  /* position: relative; */
+  /* inset-block-start: 65px; */
+  padding-inline: 20px;
 }
 
 header a{
@@ -80,9 +87,10 @@ nav details summary{
 }
 
 h1 {
-  font-size: 60px;
+
+  font-size: 40px;
   font-weight: 700;
-  margin-block-start: 64px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
@@ -131,7 +139,7 @@ blockquote p{
 .hero{
   /* background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../img/patron-1.png'); */
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  height: 350px;
+  block-size: 50px;
 }
 
 .main hr{
@@ -230,4 +238,51 @@ blockquote p{
 
 .form input::-webkit-input-placeholder{
   color: var(--white20); /*Modificar los elementos del formulario*/
+}
+
+@media screen and (min-width: 1366px) {
+  .hero{
+    block-size: 350px;
+  }
+  header{
+    font-size: 14px;
+    position: absolute;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+
+  .header{
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content{
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  header a{
+    color: var(--white20);
+    text-decoration: none;
+  }
+
+  header a:hover{
+    color: var(--white30);
+  }
+
+  header li{
+    color: var(--white20);
+    margin-inline-end: 16px;
+    margin-block-end: 16px;
+  }
+
+  nav details summary{
+    color: var(--white30);
+    font-weight: bold;
+  }
+  h1{
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
 }
